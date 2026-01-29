@@ -1,4 +1,5 @@
 import { createFileRoute, Outlet } from '@tanstack/react-router'
+import { Header } from '~/components/layout/Header'
 
 export const Route = createFileRoute('/_app')({
   component: AppLayout,
@@ -7,8 +8,8 @@ export const Route = createFileRoute('/_app')({
 function AppLayout() {
   return (
     <div>
-      <header className="p-4 border-b">🍳 Breakfast With Me</header>
-      <main className="p-4">
+      <Header />
+      <main className=''>
         <Outlet />
       </main>
     </div>
